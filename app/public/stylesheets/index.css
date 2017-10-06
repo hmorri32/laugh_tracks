@@ -1,0 +1,26 @@
+
+body {
+  display        : flex;
+  text-align     : center;
+  flex-direction : column;
+  font-family    : 'Comic Sans MS'; /*lol*/
+}
+
+.container {
+  display         : flex;
+  width           : 100%;
+  text-align      : center;
+  justify-content : center;
+  flex-direction  : column;
+  align-items     : center;
+}
+
+.comedian {
+  display         : flex;
+  width           : 400px;
+  margin          : 10px;
+  text-align      : center;
+  border          : 3px solid #c0ffee;
+  flex-direction  : column;
+  justify-content : center;
+}
