@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+<h3>yung COMEDIANS</h3>
+<h3>Average Comedian age : <%= Comedian.average_age %></h3>
+
+<% if @matches %>
+    <h3>Comedian(s) with specified age: (<%= @matches.first.age %>)</h3>
+  <% @matches.each do |thing| %>
+    <p><%= thing.name %></p>
+  <% end %>
+<% end %>
+
+<h3>SPECIALS</h3>
+<div class='container'>
+  <% @specials.each do |thing| %>
+  <div class='comedian'>
+    <h3><%= thing.name %></h3>
+    <p>BY: <%= thing.comedian.name %></p>
+    <p>Comedian Age: <%= thing.comedian.age %></p>
+  </div>
+  <% end %>
+</div>
